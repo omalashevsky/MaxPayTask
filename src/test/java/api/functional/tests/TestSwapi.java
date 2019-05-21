@@ -1,5 +1,6 @@
 package api.functional.tests;
 
+import api.functional.components.helpes.RequestSpecHelper;
 import com.jayway.restassured.response.Response;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import static api.functional.components.apiclients.StarWarsApiClient.performGetR
 
 public class TestSwapi
 {
-    private String getHeroByIdRequestLink = "https://swapi.co/api/people/%d/";
+    private String getHeroByIdRequestLink = RequestSpecHelper.BASE_URI.concat("/people/%d/");
     private int testHeroId = 1;
     private String getTestHeroPlanetRequestLink;
 

@@ -6,7 +6,7 @@ import static com.jayway.restassured.RestAssured.given;
 
 public class RequestSpecHelper
 {
-    private static final String BASE_URI = "https://swapi.co/api/";
+    public static final String BASE_URI = "https://swapi.co/api";
 
     public static RequestSpecification baseRequestSpec()
     {
